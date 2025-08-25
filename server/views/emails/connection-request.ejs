@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>New Connection Request</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; }
+    .header { text-align: center; padding: 20px 0; border-bottom: 1px solid #eee; }
+    .content { padding: 20px 0; }
+    .button {
+      display: inline-block; 
+      padding: 10px 20px; 
+      background-color: #0077b5; 
+      color: white; 
+      text-decoration: none; 
+      border-radius: 4px; 
+      margin: 20px 0;
+    }
+    .footer { 
+      margin-top: 30px; 
+      padding-top: 20px; 
+      border-top: 1px solid #eee; 
+      font-size: 12px; 
+      color: #777; 
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>New Connection Request</h1>
+  </div>
+  
+  <div class="content">
+    <p>Hello <%= recipientName %>,</p>
+    <p><strong><%= senderName %></strong> wants to connect with you on Connect-PRO.</p>
+    
+    <div style="text-align: center;">
+      <a href="<%= clientUrl %>/connections" class="button">View Request</a>
+    </div>
+    
+    <p>Or visit your connections page to accept or decline this request:</p>
+    <p><%= clientUrl %>/connections</p>
+    
+    <p>Connect with professionals, discover new opportunities, and grow your network on Connect-PRO.</p>
+  </div>
+  
+  <div class="footer">
+    <p>&copy; <%= new Date().getFullYear() %> Connect-PRO. All rights reserved.</p>
+    <p>Connect-PRO, 123 Professional Way, Suite 100, San Francisco, CA 94105</p>
+  </div>
+</body>
+</html>

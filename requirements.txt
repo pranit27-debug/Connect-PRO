@@ -1,0 +1,15 @@
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.0
+tensorflow>=2.8.0
+torch>=1.12.0
+torchvision>=0.13.0
+ultralytics>=8.0.0
+mediapipe>=0.9.0
+numpy>=1.21.0
+pillow>=8.0.0
+matplotlib>=3.5.0
+scikit-learn>=1.0.0
+flask>=2.0.0
+flask-cors>=3.0.0
+requests>=2.25.0
+streamlit>=1.20.0
